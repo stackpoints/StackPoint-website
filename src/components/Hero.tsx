@@ -1,4 +1,3 @@
-import React from 'react';
 import { Chrome } from 'lucide-react';
 import { Button } from './Button';
 
@@ -11,7 +10,7 @@ export function Hero() {
             Rewarding the <span className="text-[#F48024]">StackExchange</span> Community
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 mb-8 sm:mb-12 max-w-2xl mx-auto">
-            Earn crypto rewards for your valuable contributions to the 20M+ StackExchange community
+            20M+ StackExchange community members can earn crypto rewards for their valuable contributions to the platform.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Button 
@@ -21,7 +20,7 @@ export function Hero() {
               className="w-full sm:w-auto"
               external={true}
             >
-              Download Extension
+              Coming soon(Download Extension)
             </Button>
           </div>
         </div>
