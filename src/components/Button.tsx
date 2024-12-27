@@ -6,10 +6,18 @@ interface ButtonProps {
   children: React.ReactNode;
   icon?: LucideIcon;
   href?: string;
+  external?: boolean;
   className?: string;
 }
 
-export function Button({ variant = 'primary', children, icon: Icon, href, className = '' }: ButtonProps) {
+export function Button({ 
+  variant = 'primary', 
+  children, 
+  icon: Icon, 
+  href, 
+  external = false,
+  className = '' 
+}: ButtonProps) {
   const baseStyles = 'inline-flex items-center justify-center px-6 py-2.5 rounded-md font-medium transition-all duration-200';
   const variants = {
     primary: 'bg-[#F48024] hover:bg-[#DA6F1C] text-white',
@@ -17,7 +25,13 @@ export function Button({ variant = 'primary', children, icon: Icon, href, classN
   };
 
   const Component = href ? 'a' : 'button';
-  const props = href ? { href } : {};
+  const props = href ? {
+    href,
+    ...(external && {
+      target: '_blank',
+      rel: 'noopener noreferrer',
+    }),
+  } : {};
 
   return (
     <Component

@@ -1,5 +1,6 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "stackpoints",
+  "description": "Rewarding the StackExchange Community.",
   "private": true,
   "version": "0.0.0",
   "type": "module",

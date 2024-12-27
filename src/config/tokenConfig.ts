@@ -4,19 +4,19 @@ export const tokenConfig = {
   totalSupply: '1,000,000,000',
   distribution: {
     community: {
-      percentage: 70,
-      amount: '700,000,000',
-      description: 'Community rewards, airdrops, and ecosystem growth initiatives'
+      percentage: 50,
+      amount: '500,000,000',
+      description: 'Earlydrop to existing StackExchange Community based on reputation points'
     },
     development: {
       percentage: 20,
       amount: '200,000,000',
-      description: 'Platform development, marketing, and strategic partnerships'
+      description: 'Content development and community engagement drop(based on content quality).'
     },
-    treasury: {
-      percentage: 10,
-      amount: '100,000,000',
-      description: 'Liquidity provision and ecosystem stability reserve'
+    liquidity: {
+      percentage: 30,
+      amount: '300,000,000',
+      description: 'Initial Liquidity provision(10%), Exchange listing(10%), Market making and ecosystem stability reserve(10%)'
     }
   }
 } as const;

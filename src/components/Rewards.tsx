@@ -1,5 +1,4 @@
-import React from 'react';
-import { Award, MessageSquare, CheckCircle, Star } from 'lucide-react';
+import { MessageSquare, CheckCircle, Star } from 'lucide-react';
 import { WithdrawalFees } from './WithdrawalFees';
 
 export function Rewards() {
