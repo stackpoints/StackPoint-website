@@ -16,7 +16,7 @@ export const tokenConfig = {
     liquidity: {
       percentage: 30,
       amount: '300,000,000',
-      description: 'Initial Liquidity provision(10%), Exchange listing(10%), Market making and ecosystem stability reserve(10%)'
+      description: 'Initial Liquidity provision(10%), (20%) Testnet Airdrop, Exchange listing, Market making and ecosystem stability reserve.'
     }
   }
 } as const;
